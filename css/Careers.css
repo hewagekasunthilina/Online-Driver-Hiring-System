@@ -1,0 +1,149 @@
+*{ margin: 0; padding: 0; }
+
+.clearfix { overflow: auto }
+
+a { text-decoration: none; }
+
+div.topic h3{
+	font-family: aller;
+	font-size: 35px;
+	margin-top: 25px;
+	margin-left: 15px;
+	text-align: center;
+}
+
+div.op1 h4{
+	margin-left: 60px;
+	font-size: 25px;
+}
+
+div.op1 p{
+	margin-left: 80px;
+}
+
+div.upload p{
+	font-family: aller;
+	font-size: 16px;
+	margin-left: 20px;
+	margin-top: 50px;
+	color: black;
+}
+
+div.upload input{
+	margin-left: 20px;
+	background-color:white;
+}
+
+div.upload button{
+	border-radius: 5px;
+	background-color: blue;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+	width: 150px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	margin-left: 0px;
+}
+
+/*-------------------------------------------------------------------------footer statrt-------------------------*/
+
+footer{
+	width: 1000px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 150px;
+}
+
+div.footercol{
+	width: 231.25px;
+	float: left;
+	margin-left: 15px;
+	border-top: 1px solid #000;
+}
+
+div.footercol h4{
+	text-transform: uppercase;
+	margin-top: 15px;
+	color: #444;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+div.news{
+	font-size: 16px;
+}
+
+ul.quicklinks{
+	list-style: none;
+	margin-top: 15px;
+}
+
+ul.quicklinks li a{
+	margin-bottom: 5px;
+	display: block;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 5px;
+	color: #666;
+}
+
+ul.quicklinks li a::before{
+	content: "*";
+}
+
+ul.quicklinks li a:hover{
+	color: red;
+}
+
+div.postinfo{
+	font-size: 16px;
+}
+
+
+form.contact input, form.contact textarea{
+	background: #eee;
+	padding: 5px;
+	margin-bottom: 5px;
+	width: 221.25px;
+	border-radius: 5px;
+	border:none;
+	font-family: inherit;
+	font-size: 16px;
+}
+
+div.contact textarea{
+	height: 130px;
+}
+
+form.contact button{
+	background: #eee;
+	color: red;
+	border:none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-family: inherit;
+
+}
+
+div.copyrights{
+	width: 100%;
+	background: #eee;
+	float:left;
+	margin-top: 15px;
+}
+
+div.left{
+	float: left;
+	margin: 20px;
+}
+
+div.right{
+	float: right;
+	margin: 20px;
+}
+
+/*---------------------------------------------------------footer end------------------------------------------*/

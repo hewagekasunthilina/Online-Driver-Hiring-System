@@ -1,0 +1,440 @@
+*{ margin: 0; padding: 0; }
+
+.clearfix { overflow: auto }
+
+a { 
+	text-decoration: none;
+	color: white;
+ }
+
+.wrapper{
+	margin: 0 auto;
+	width: 100%;
+
+}
+
+.top-bar{
+	width:100%;
+	background: #0039e6;
+}
+
+.top-bar-links{
+	float: left;
+}
+
+.top-bar-links ul{
+	list-style: none;
+	margin: 15px;
+}
+.top-bar-links ul li{
+	display: inline-block;
+	padding: 0 10px;
+	border-right: 1px solid black;
+}
+
+.top-bar-links ul li:last-child{
+	border: none;
+}
+
+.top-bar-links ul li a{
+	color: black;
+}
+
+.site-search{
+	padding: 3px 10px;
+	float: right;
+	margin:15px;
+	background: white;
+	border-radius: 10px;
+}
+
+.site-search input{
+	border: 0;
+	float: left;
+}
+
+.site-search button{
+	background:url(../img/search.png)
+	width: 18px;
+	height: 18px;
+	border: 0;
+	float: right;
+}
+
+header .logo{
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+header .logo h1{
+	font-variant: small-caps;
+	font-size: 48px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	color: gray;
+	margin-left: 50px;
+}
+
+header .logodesign{
+	width: 55px;
+	height: 55px;
+	margin-top: 25px;
+	background-image: url(../img/Logo.png)
+}
+
+header .logo p{
+	font-size: 18px;
+	color: gray;
+	margin-left: 50px;
+}
+
+header .socialmedia{
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+header .socialmedia ul{
+	list-style: none;
+
+}
+
+header .socialmedia ul li{
+	display: inline-block;
+}
+
+header .socialmedia ul li a{
+	background: #444;
+	color: #b5b1b1;
+	margin-left: 5px;
+	padding: 6px;
+	display: inline-block;
+	border-radius: 20px;
+}
+
+header .socialmedia ul li a:hover{
+	background: orange;
+}
+
+nav{
+	background-color: black;
+	background: linear-gradient(#0d0d0d, #404040 ,#0d0d0d);
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 5px;
+
+
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	color: white;
+	text-transform: uppercase;
+	margin-left:100px;
+	margin-right: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+nav ul li a:hover{
+	color: red;
+}
+
+/*---------------------------------------------------------heder section end------------------------*/
+
+div.topic h3{
+	margin-top: 16px;
+	margin-bottom: 16px;
+	margin-left: 50px;
+	font-family: aller;
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.all1{
+	margin-left: 34px;
+}
+
+.all2{
+	margin-left: 34px;
+}
+
+.container {
+  position: relative;
+  width:150px;
+}
+
+.image {
+  display: block;
+  width: 150px;
+  height: 200px;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  background-color: #ffa64d;
+  overflow: hidden;
+  width: 150px;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height:200px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button{
+	border-radius: 5px;
+	background-color: lightblue;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+	width: 150px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	margin-left: 0px;
+}
+
+.button span{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after{
+	content:  '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span{
+	padding-right: 25px;
+}
+
+.button:hover span:after{
+	opacity: 1;
+	right: 0;
+} 
+
+div.special h3{
+	margin-top: 16px;
+	margin-bottom: 16px;
+	margin-left: 50px;
+	font-family: aller;
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+div.more a:hover{
+    color: orange;
+}
+
+div.special a:hover{
+	color: orange;
+}
+
+/*------------------------------------------Chat window start-----------------------------------*/
+
+div.chat{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	border:3px solid #f1f1f1;
+	z-index: 9;
+}
+
+.form-container{
+	max-width: 300px;
+	padding: 10px;
+	background-color: gray;
+}
+
+.form-container textarea{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border:none;
+	background: #f1f1f1;
+	resize: none;
+	min-height: 200px;
+}
+
+.form-container textarea:focus{
+	background-color: #ddd;
+	outline: none;
+}
+
+.form-container .btn{
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	border:none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+
+.form-container .cancel{
+	background-color: red;
+}
+
+.form-container .btn:hover, .button:hover{
+	opacity: 1;
+}
+
+
+/*-------------------------------------------Chat window end---------------------------------------*/
+
+/*--------------------------------------------jquary start-----------------------------------------*/
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+/*----------------------------------------------jquary end------------------------------------------*/	
+
+/*-------------------------------------------------------------------------footer statrt-------------------------*/
+
+footer{
+	width: 1000px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 150px;
+}
+
+div.footercol{
+	width: 231.25px;
+	float: left;
+	margin-left: 15px;
+	border-top: 1px solid #000;
+}
+
+div.footercol h4{
+	text-transform: uppercase;
+	margin-top: 15px;
+	color: #444;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+div.news{
+	font-size: 16px;
+}
+
+ul.quicklinks{
+	list-style: none;
+	margin-top: 15px;
+}
+
+ul.quicklinks li a{
+	margin-bottom: 5px;
+	display: block;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 5px;
+	color: #666;
+}
+
+ul.quicklinks li a::before{
+	content: "*";
+}
+
+ul.quicklinks li a:hover{
+	color: red;
+}
+
+div.postinfo{
+	font-size: 16px;
+}
+
+
+form.contact input, form.contact textarea{
+	background: #eee;
+	padding: 5px;
+	margin-bottom: 5px;
+	width: 221.25px;
+	border-radius: 5px;
+	border:none;
+	font-family: inherit;
+	font-size: 16px;
+}
+
+div.contact textarea{
+	height: 130px;
+}
+
+form.contact button{
+	background: #eee;
+	color: red;
+	border:none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-family: inherit;
+
+}
+
+div.copyrights{
+	width: 100%;
+	background: #eee;
+	float:left;
+	margin-top: 15px;
+}
+
+div.left{
+	float: left;
+	margin: 20px;
+}
+
+div.right{
+	float: right;
+	margin: 20px;
+}
+
+/*---------------------------------------------------------footer end------------------------------------------*/
+
+
